@@ -1,11 +1,11 @@
 #!/bin/bash
-if [ "$#" -ne 2 ]; then
+if [ "$#" -ne 1 ]; then
         echo "usage: sh ThreadDumpUsageAnalyzer.sh <PID> <high CPU thread result count>"
         exit
 fi
 
-PID=$1
-RESULTCOUNT=$2
+PID=$(grep "" thread_usage_* | grep -v PID |awk  '{print $2}' | sort | uniq ;)
+RESULTCOUNT=$1
 
 echo  "*****  START ***** ";
 for f in thread_usage*.txt;
@@ -17,8 +17,8 @@ do
         #! View thread usage column names
         echo "  PID   TID %CPU     TIME NLWP  C | JAVAThread ";
         #!echo " " ${f};
-        VAR=$(grep $PID $f | sort -nk3 | tail -n $RESULTCOUNT )
-        grep $PID $f | sort -nk3 | tail -n $RESULTCOUNT | while read usage_line ;
+        VAR=$(grep $PID $f | sort -rnk3 | head -n $RESULTCOUNT )
+        grep $PID $f | sort -rnk3 | head -n $RESULTCOUNT | while read usage_line ;
         do
         	echo -n "$usage_line";
         	#! Native OS and JVA thread ID mapping

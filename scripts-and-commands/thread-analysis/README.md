@@ -12,16 +12,15 @@ copy the script [thread-usage-analyzer.sh](thread-usage-analyzer.sh) to the same
 ## Instruction to run
 
 
-```sh ThreadDumpUsageAnalyzer.sh <PID> <RESULTCOUNT>```
+```sh ThreadDumpUsageAnalyzer.sh <RESULTCOUNT>```
   
 Available parameters
 
-- PID for java process ID
 - RESULTCOUNT for limiting the result sets in the out-put 
 
 ## Sample output
 ```
- sh thread-usage-analyzer.sh 28969 5
+ sh thread-usage-analyzer.sh 5
  
  *****  START ***** 
 thread_usage_2021-05-24-10:17:45.txt ./thread_dump_2021-05-24-10:17:45.txt
