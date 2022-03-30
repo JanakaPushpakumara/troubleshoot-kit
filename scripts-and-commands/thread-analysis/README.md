@@ -12,7 +12,7 @@ copy the script [thread-usage-analyzer.sh](thread-usage-analyzer.sh) to the same
 ## Instruction to run
 
 
-```sh ThreadDumpUsageAnalyzer.sh <PID> <RESULTCOUNT>```
+```sh thread-usage-analyzer.sh <PID> <RESULTCOUNT>```
   
 Available parameters
 
