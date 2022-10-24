@@ -13,7 +13,7 @@ The JFR dump contains multiple thread dumps. We can extract them for further ana
 * Split the threadumps with the below command.
 
   ```  
-  split -p "[0-9]{4}-[0-9]{2}-[0-9]{2}" ../AllThreadDumps.txt 
+  split -p "[0-9]{4}-[0-9]{2}-[0-9]{2}" AllThreadDumps.txt 
   ```
   Ex: 
   
