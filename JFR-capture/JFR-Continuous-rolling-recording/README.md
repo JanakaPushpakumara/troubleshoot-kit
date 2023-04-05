@@ -1,6 +1,6 @@
 ## Java Flight Recorder - Continuous rolling recording
 
-###How to get a rolling recording into disk
+### How to get a rolling recording into disk
 * Downlaod and save the file (e.g., jfr_script.sh). And make the script executable 
 
     Ex:
