@@ -37,7 +37,7 @@ for f in thread_usage*.txt;
                     #!echo -n "$NTIDHEX | ";
 
                     printf " | ";
-                    grep "nid=0x$NTIDHEX" $TDDumpL;
+                    grep "nid=0x$NTIDHEX " $TDDumpL;
                 done;
             echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<";
         fi
