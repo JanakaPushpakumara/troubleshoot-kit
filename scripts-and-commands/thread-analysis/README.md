@@ -6,6 +6,12 @@ consuming the high percentage of the server CPU.
 
 ## How to analyze ?
 
+linux | [thread-usage-analyzer.sh](thread-usage-analyzer.sh) | 
+-------- | -------- | 
+mac | [thread-usage-analyzer-mac.sh](thread-usage-analyzer-mac.sh) | 
+
+
+
 copy the script [thread-usage-analyzer.sh](thread-usage-analyzer.sh) for linux or [thread-usage-analyzer-mac.sh](thread-usage-analyzer-mac.sh) for mac to the same directory which contains the thread usage and thread dumps that has been collected using the
 [Script to get thread dumps](../../scripts-and-commands/thread-dump/).
 
